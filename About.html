@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>About - Blog Harits</title>
+  <!-- Gambar Pada Tab -->
+  <link rel="icon" type="image/png" href="Gambar/Gambar Masker.jpg"> 
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* Hero Section */
+    .hero {
+      position: relative;
+      background: url('https://via.placeholder.com/1920x1080') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 4.5rem;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+    }
+
+    .btn-hero {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    /* Card Hover Effect */
+    .card {
+      border: none;
+      border-radius: 10px;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Parallax Section */
+    .parallax {
+      background: url('https://via.placeholder.com/1920x600') no-repeat center center;
+      background-size: cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .parallax h2 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #343a40;
+      color: #adb5bd;
+    }
+
+    footer a {
+      color: #adb5bd;
+      transition: color 0.2s;
+    }
+
+    footer a:hover {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">BLOG BELAJAR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Articles.html">Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="About.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+  </br>
+    <h2 class="text-center mb-5">About Me</h2>
+    <div class="row">
+      <h3 style="text-align: center;">Muhammad Harits</h3>
+      <!-- About Image -->
+      <div class="col-md-6">
+        <img src="Gambar/Gambar 3.jpg" class="img-fluid rounded " alt="About Us Image" style="height: 600px; margin-right: 50px; margin-top: 50px;">
+        <img src="Gambar/Gambar 6.jpg" class="img-fluid rounded" alt="About Us Image" style="height: 600px; width:290px; margin-top: 50px;">
+      </div>
+      <!-- About Content -->
+      <div class="col-md-6" style="margin-top: 50px;">
+        </br>
+        <ul>
+          <li>Nama Lengkap : Muhammad Harits</li>
+          <li>Tempat, Tanggal Lahir : Jakarta, 01 April 2007</li>
+          <li>Umur : 17 Tahun</li>
+          <li>Pekerjaan : Pelajar</li>
+          <li>Asal Sekolah : <a href="https://www.smk3percik.sch.id/">SMK 3 Perguruan Cikini</a></li>
+        </ul>
+        <p>
+          Nama saya Muhammad Harits, orang biasa memanggil saya Harits. Saya adalah seorang siswa yang berasal dari SMK 3 Perguruan Cikini dengan passion mendalam dalam bidang Teknik Komputer dan Jaringan. Selama perjalanan akademis saya, saya telah berkomitmen untuk mengembangkan keterampilan dan pengetahuan saya di bidang ini.
+        </p>
+        <p>
+          Hobi saya adalah Bermain Sepak Bola dan bermusik (bermain gitar dan bernyanyi), hobi ini menjadi sumber motivasi dan kebahagiaan bagi saya. Dengan Bermain sepak bola dan bernyanyi dengan gitar, saya belajar tentang ketekunan dan bagaimana menghadapi tantangan dengan sikap positif.
+        </p>
+        <p>
+          Selama Sekolah saya mendapat beberapa prestasi berharga, seperti :
+          <ul>
+            <li>Mendapatkan Juara 1 LKS Information Network Cabling Tingkat Jakarta Selatan</li>
+            <li>Mendapatkan Juara 6 (Harapan 3) LKS Information Network Cabling Tingkat Provinsi DKI Jakarta</li>
+            <li>Sedang menjalankan Selekda dan Seleknas agar dapat menjadi perwakilan Indonesia dalam Lomba Information Network Cabling Worldskills 14th</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="py-5">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>About</h5>
+          <p>Blog ini dibuat untuk melengkapi tugas mata pelajaran Administrasi Sistem Jaringan (ASJ) yang berfokus pada materi "Hosting".</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Articles.html">Articles</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <a href="https://www.facebook.com/muhammad.harits.395669?locale=id_ID" class="d-block">Facebook</a>
+          <a href="https://x.com/Miiharits" class="d-block">X</a>
+          <a href="https://www.tiktok.com/@tsbukanss?lang=en" class="d-block">Tiktok</a>
+          <a href="https://www.instagram.com/mii.harits/" class="d-block">Instagram</a>
+        </div>
+      </div>
+      <p class="mt-4">&copy; 2024 My Grand Blog. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

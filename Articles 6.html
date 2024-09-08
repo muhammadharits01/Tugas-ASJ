@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sistem Keamanan Jaringan</title>
+  <!-- Gambar Pada Tab -->
+  <link rel="icon" type="image/png" href="Gambar/Gambar Masker.jpg"> 
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome CDN -->
+  <!-- Custom CSS -->
+  <style>
+    /* Article Section */
+    .article-content {
+      margin-top: 30px;
+    }
+    .article-img {
+      width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+    }
+    .card-info {
+      background-color: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 0.5rem;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .card-info h5 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .card-info p {
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+    .highlight {
+      background-color: #e9ecef;
+      padding: 15px;
+      border-radius: 0.5rem;
+      margin-top: 20px;
+    }
+    .highlight h5 {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+    .highlight p {
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+      font-size: 1.25rem;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #004085;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      background: url('https://via.placeholder.com/1920x1080') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 4.5rem;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+    }
+
+    .btn-hero {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    /* Card Hover Effect */
+    .card {
+      border: none;
+      border-radius: 10px;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Parallax Section */
+    .parallax {
+      background: url('https://via.placeholder.com/1920x600') no-repeat center center;
+      background-size: cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .parallax h2 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #343a40;
+      color: #adb5bd;
+    }
+
+    footer a {
+      color: #adb5bd;
+      transition: color 0.2s;
+    }
+
+    footer a:hover {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">BLOG BELAJAR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Articles.html">Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="background-image: url('Gambar/network-security_MCG.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Sistem Keamanan Jaringan</h1>
+    </div>
+  </section>
+
+  <!-- Article Section -->
+  <section class="container my-5 article-content">
+    <h2 class="text-center mb-4" style="font-size: 2rem;">Sistem Keamanan Jaringan</h2>
+      
+    <p style="font-size: 1.125rem;">Sistem keamanan jaringan adalah sekumpulan teknologi, kebijakan, dan prosedur yang dirancang untuk melindungi jaringan komputer dari ancaman, gangguan, dan akses tidak sah. Artikel ini membahas dasar-dasar sistem keamanan jaringan, fitur utama, manfaat, dan aplikasi potensialnya dalam melindungi informasi dan infrastruktur jaringan.</p>
+    
+    <h3 style="font-size: 1.75rem;">Apa Itu Sistem Keamanan Jaringan?</h3>
+    </br>
+    <p style="font-size: 1.125rem;">Sistem keamanan jaringan mencakup berbagai metode dan teknologi yang digunakan untuk melindungi jaringan komputer dari ancaman yang dapat merusak atau mengakses informasi secara ilegal. Sistem ini melibatkan pengamanan perangkat keras, perangkat lunak, serta kebijakan dan prosedur untuk memastikan integritas, kerahasiaan, dan ketersediaan data dalam jaringan.</p>
+
+    <h3 style="font-size: 1.75rem;">Fitur Utama Sistem Keamanan Jaringan</h3>
+    </br>
+    <div class="row">
+      <!-- Fitur 1 -->
+      <div class="col-md-4">
+        <div class="card card-info">
+          <h5>Firewall</h5>
+          <p>Firewall berfungsi untuk memantau dan mengendalikan lalu lintas jaringan, melindungi jaringan dari akses tidak sah dan serangan dari luar.</p>
+        </div>
+      </div>
+      <!-- Fitur 2 -->
+      <div class="col-md-4">
+        <div class="card card-info">
+          <h5>Antivirus dan Anti-Malware</h5>
+          <p>Perangkat lunak antivirus dan anti-malware melindungi sistem dari virus, worm, trojan, dan jenis malware lainnya yang dapat merusak atau mencuri data.</p>
+        </div>
+      </div>
+      <!-- Fitur 3 -->
+      <div class="col-md-4">
+        <div class="card card-info">
+          <h5>Enkripsi</h5>
+          <p>Enkripsi data mengamankan informasi dengan mengubah data menjadi format yang tidak dapat dibaca tanpa kunci dekripsi yang tepat, menjaga kerahasiaan data saat ditransmisikan atau disimpan.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-size: 1.75rem;">Manfaat Sistem Keamanan Jaringan</h3>
+    </br>
+    <div class="row">
+      <!-- Manfaat 1 -->
+      <div class="col-md-4">
+        <div class="card card-info">
+          <h5>Perlindungan Data</h5>
+          <p>Menjaga data sensitif dan penting dari akses yang tidak sah, pencurian, atau kerusakan, sehingga melindungi privasi dan integritas informasi.</p>
+        </div>
+      </div>
+      <!-- Manfaat 2 -->
+      <div class="col-md-4">
+        <div class="card card-info">
+          <h5>Pencegahan Serangan</h5>
+          <p>Mencegah serangan dari malware, ransomware, dan peretas yang dapat mengakibatkan kerugian finansial atau kerusakan reputasi organisasi.</p>
+        </div>
+      </div>
+      <!-- Manfaat 3 -->
+      <div class="col-md-4">
+        <div class="card card-info">
+          <h5>Compliance</h5>
+          <p>Memastikan bahwa organisasi mematuhi regulasi dan standar keamanan yang diperlukan, seperti GDPR atau HIPAA, untuk menjaga kepercayaan dan legalitas.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-size: 1.75rem;">Aplikasi Sistem Keamanan Jaringan</h3>
+    </br>
+    <p style="font-size: 1.125rem;">Sistem keamanan jaringan memiliki berbagai aplikasi yang sangat penting dalam melindungi berbagai aspek dari infrastruktur TI, termasuk:</p>
+    <ul>
+      <li><strong>Perusahaan:</strong> Melindungi data dan aset perusahaan dari ancaman siber, menjaga keamanan transaksi, dan menjaga kerahasiaan informasi pelanggan.</li>
+      <li><strong>Institusi Keuangan:</strong> Melindungi sistem perbankan dan transaksi keuangan dari pencurian dan penipuan, serta menjaga integritas data nasabah.</li>
+      <li><strong>Organisasi Pemerintah:</strong> Menjaga data sensitif dan informasi penting dari akses yang tidak sah, serangan, atau kebocoran informasi.</li>
+      <li><strong>Pengguna Pribadi:</strong> Melindungi perangkat pribadi dari ancaman malware dan serangan siber, serta menjaga privasi data pribadi online.</li>
+    </ul>
+
+    <h3 style="font-size: 1.75rem;">Kesimpulan</h3>
+    </br>
+    <p style="font-size: 1.125rem;">Sistem keamanan jaringan merupakan aspek krusial dari infrastruktur TI yang melindungi data dan informasi dari ancaman yang dapat mengancam integritas dan kerahasiaan. Dengan berbagai teknologi dan metode yang tersedia, sistem keamanan jaringan membantu mencegah akses yang tidak sah, melindungi dari serangan, dan memastikan kepatuhan terhadap regulasi. Penerapan sistem keamanan yang efektif sangat penting untuk menjaga keamanan dan keberlangsungan operasional di era digital ini.</p>
+  </section>
+
+    <!-- footer -->
+  <footer class="py-5">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>About</h5>
+          <p>Blog ini dibuat untuk melengkapi tugas mata pelajaran Administrasi Sistem Jaringan (ASJ) yang berfokus pada materi "Hosting".</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Articles.html">Articles</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <a href="https://www.facebook.com/muhammad.harits.395669?locale=id_ID" class="d-block">Facebook</a>
+          <a href="https://x.com/Miiharits" class="d-block">X</a>
+          <a href="https://www.tiktok.com/@tsbukanss?lang=en" class="d-block">Tiktok</a>
+          <a href="https://www.instagram.com/mii.harits/" class="d-block">Instagram</a>
+        </div>
+      </div>
+      <p class="mt-4">&copy; 2024 My Grand Blog. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>

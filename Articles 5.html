@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sistem Control dan Monitoring</title>
+  <!-- Gambar Pada Tab -->
+  <link rel="icon" type="image/png" href="Gambar/Gambar Masker.jpg"> 
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome CDN -->
+  <!-- Custom CSS -->
+  <style>
+    /* Article Section */
+    .article-content {
+      margin-top: 30px;
+    }
+    .article-img {
+      width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+    }
+    .card-info {
+      background-color: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 0.5rem;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .card-info h5 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .card-info p {
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+    .highlight {
+      background-color: #e9ecef;
+      padding: 15px;
+      border-radius: 0.5rem;
+      margin-top: 20px;
+    }
+    .highlight h5 {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+    .highlight p {
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+      font-size: 1.25rem;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #004085;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      background: url('https://via.placeholder.com/1920x1080') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 4.5rem;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+    }
+
+    .btn-hero {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    /* Card Hover Effect */
+    .card {
+      border: none;
+      border-radius: 10px;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Parallax Section */
+    .parallax {
+      background: url('https://via.placeholder.com/1920x600') no-repeat center center;
+      background-size: cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .parallax h2 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #343a40;
+      color: #adb5bd;
+    }
+
+    footer a {
+      color: #adb5bd;
+      transition: color 0.2s;
+    }
+
+    footer a:hover {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">BLOG BELAJAR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Articles.html">Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="background-image: url('Gambar/ASJ\ XII.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Sistem Control dan Monitoring</h1>
+    </div>
+  </section>
+
+  <!-- Article Section -->
+  <section class="container my-5 article-content">
+    <h2 class="text-center mb-4" style="font-size: 2rem;">Sistem Control dan Monitoring</h2>
+    
+    <p style="font-size: 1.125rem;">Sistem kontrol dan monitoring adalah solusi teknologi yang memungkinkan pemantauan dan pengendalian berbagai proses dan sistem secara real-time. Artikel ini membahas dasar-dasar sistem kontrol dan monitoring, fitur utama, manfaat, dan aplikasi potensialnya dalam berbagai industri.</p>
+    
+    <h3 style="font-size: 1.75rem;">Apa Itu Sistem Kontrol dan Monitoring?</h3>
+    </br>
+    <p style="font-size: 1.125rem;">Sistem kontrol dan monitoring adalah sistem yang dirancang untuk memantau, mengendalikan, dan mengelola berbagai proses dan operasi. Sistem ini sering digunakan dalam industri, energi, dan infrastruktur untuk memastikan bahwa proses berjalan dengan lancar dan sesuai dengan parameter yang ditetapkan. Sistem ini biasanya mencakup perangkat keras dan perangkat lunak yang bekerja sama untuk memberikan informasi yang diperlukan untuk pengambilan keputusan dan pengendalian sistem secara real-time.</p>
+
+    <h3 style="font-size: 1.75rem;">Fitur Utama Sistem Kontrol dan Monitoring</h3>
+    </br>  
+    <div class="row">
+      <!-- Fitur 1 -->
+      <div class="col-md-4">
+        <div class="card card-info">
+          <h5>Pengendalian Real-Time</h5>
+          <p>Sistem kontrol dan monitoring memungkinkan pengendalian dan penyesuaian proses secara langsung, membantu dalam respons cepat terhadap perubahan atau masalah yang muncul.</p>
+        </div>
+      </div>
+      <!-- Fitur 2 -->
+      <div class="col-md-4">
+        <div class="card card-info">
+          <h5>Pemantauan Jarak Jauh</h5>
+          <p>Pengguna dapat memantau dan mengendalikan sistem dari lokasi yang jauh menggunakan antarmuka berbasis web atau aplikasi mobile.</p>
+        </div>
+      </div>
+      <!-- Fitur 3 -->
+      <div class="col-md-4">
+        <div class="card card-info">
+          <h5>Analisis Data</h5>
+          <p>Sistem ini mengumpulkan dan menganalisis data operasional untuk memberikan wawasan tentang kinerja sistem dan mendeteksi potensi masalah sebelum menjadi kritis.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-size: 1.75rem;">Manfaat Sistem Kontrol dan Monitoring</h3>
+    </br>
+    <div class="row">
+      <!-- Manfaat 1 -->
+      <div class="col-md-4">
+        <div class="card card-info">
+          <h5>Peningkatan Efisiensi</h5>
+          <p>Dengan pemantauan dan pengendalian yang lebih baik, sistem ini membantu meningkatkan efisiensi operasional dan mengurangi pemborosan.</p>
+        </div>
+      </div>
+      <!-- Manfaat 2 -->
+      <div class="col-md-4">
+        <div class="card card-info">
+          <h5>Pengurangan Downtime</h5>
+          <p>Deteksi dini terhadap masalah potensial membantu mengurangi waktu henti sistem dan menjaga kelancaran operasional.</p>
+        </div>
+      </div>
+      <!-- Manfaat 3 -->
+      <div class="col-md-4">
+        <div class="card card-info">
+          <h5>Peningkatan Keamanan</h5>
+          <p>Memantau sistem secara real-time membantu dalam mendeteksi dan mencegah potensi ancaman atau pelanggaran keamanan.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-size: 1.75rem;">Aplikasi Sistem Kontrol dan Monitoring</h3>
+    </br>
+    <p style="font-size: 1.125rem;">Sistem kontrol dan monitoring dapat diterapkan di berbagai sektor untuk meningkatkan kinerja dan keamanan, termasuk:</p>
+    <ul>
+      <li><strong>Industri Manufaktur:</strong> Memantau dan mengendalikan proses produksi untuk memastikan kualitas dan efisiensi.</li>
+      <li><strong>Energi dan Utilitas:</strong> Pengendalian dan pemantauan infrastruktur energi seperti pembangkit listrik dan jaringan distribusi.</li>
+      <li><strong>Bangunan Pintar:</strong> Mengelola sistem HVAC, pencahayaan, dan keamanan dalam gedung untuk kenyamanan dan efisiensi energi.</li>
+      <li><strong>Transportasi:</strong> Memantau dan mengendalikan sistem transportasi seperti lalu lintas dan sistem transportasi umum untuk mengoptimalkan mobilitas.</li>
+    </ul>
+
+    <h3 style="font-size: 1.75rem;">Kesimpulan</h3>
+    </br>
+    <p style="font-size: 1.125rem;">Sistem kontrol dan monitoring memainkan peran penting dalam memastikan operasional yang efisien dan aman di berbagai sektor. Dengan kemampuan untuk memantau dan mengendalikan proses secara real-time, sistem ini membantu meningkatkan efisiensi, mengurangi downtime, dan memastikan keamanan. Implementasi sistem kontrol dan monitoring yang efektif dapat memberikan manfaat signifikan dan mendukung pencapaian tujuan operasional dan strategis.</p>
+  </section>
+
+    <!-- footer -->
+  <footer class="py-5">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>About</h5>
+          <p>Blog ini dibuat untuk melengkapi tugas mata pelajaran Administrasi Sistem Jaringan (ASJ) yang berfokus pada materi "Hosting".</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Articles.html">Articles</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <a href="https://www.facebook.com/muhammad.harits.395669?locale=id_ID" class="d-block">Facebook</a>
+          <a href="https://x.com/Miiharits" class="d-block">X</a>
+          <a href="https://www.tiktok.com/@tsbukanss?lang=en" class="d-block">Tiktok</a>
+          <a href="https://www.instagram.com/mii.harits/" class="d-block">Instagram</a>
+        </div>
+      </div>
+      <p class="mt-4">&copy; 2024 My Grand Blog. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
